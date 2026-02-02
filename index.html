@@ -37,19 +37,22 @@
         </p>
       </header>
 
-      <div class="codeBox">
+      <div class="codeBox" role="group" aria-label="Referral code box">
         <div class="label">Referral Code</div>
         <div class="codeRow">
           <code id="refCode" class="code">FULLCODE</code>
-          <button id="copyBtn" class="btn primary" type="button">Copy</button>
+          <button id="copyBtn" class="btn primary" type="button" aria-label="Copy referral code">Copy</button>
         </div>
-        <p id="copyHint" class="hint">Tip: If you don't see a discount preview, it may not be available for your account right now.</p>
+        <p id="copyHint" class="hint" aria-live="polite">Tip: If you don't see a discount preview, it may not be available for your account right now.</p>
       </div>
 
       <div class="actions">
-        <a class="btn" href="https://www.okx.com/join/fullcode" target="_blank" rel="noopener noreferrer">
+        <a class="btn" href="https://www.okx.com/join/fullcode" target="_blank" rel="noopener noreferrer" aria-label="Open OKX join page">
           Open Official Join Link
         </a>
+        <button class="btn ghost" type="button" id="shareBtn" aria-label="Share this page">
+          Share
+        </button>
       </div>
 
       <hr class="sep" />
@@ -57,14 +60,14 @@
       <section class="note">
         <h2>Notes</h2>
         <ul>
-          <li>This page is informational only and does not constitute investment advice.</li>
-          <li>Discounts and benefits may change depending on promotions and region.</li>
-          <li>Please confirm the final fee discount on the OKX sign-up screen.</li>
+          <li>This page is informational and is not investment advice.</li>
+          <li>Discounts and bonuses can change at any time; always confirm on the final sign-up screen.</li>
+          <li>If a code field is not shown during sign-up, it may be auto-applied or not available in your region.</li>
         </ul>
       </section>
 
       <footer class="footer">
-        <small>Last updated: 2026-02-02</small>
+        <small>Last updated: <span id="updatedAt"></span></small>
       </footer>
     </section>
   </main>
