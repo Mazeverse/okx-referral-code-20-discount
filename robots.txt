@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: ./sitemap.xml
+Sitemap: https://okx-referral-code-20-discount.vercel.app/sitemap.xml
